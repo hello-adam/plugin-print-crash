@@ -1,0 +1,908 @@
+[~] valgrind ./code/godot/bin/godot.linuxbsd.editor.x86_64 ./code/plugin-print-crash/project.godot
+==5981== Memcheck, a memory error detector
+==5981== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5981== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==5981== Command: ./code/godot/bin/godot.linuxbsd.editor.x86_64 ./code/plugin-print-crash/project.godot
+==5981== 
+Godot Engine v4.1.3.stable.custom_build.fc7920185 - https://godotengine.org
+==5981== Invalid read of size 8
+==5981==    at 0x82E96A8: strncmp (strcmp.S:172)
+==5981==    by 0x82C768D: is_dst (dl-load.c:216)
+==5981==    by 0x82C910E: _dl_dst_count (dl-load.c:253)
+==5981==    by 0x82C910E: expand_dynamic_string_token (dl-load.c:395)
+==5981==    by 0x82C92B7: fillin_rpath.isra.0 (dl-load.c:483)
+==5981==    by 0x82C9602: decompose_rpath (dl-load.c:654)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:696)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:677)
+==5981==    by 0x82CBBF5: _dl_map_object (dl-load.c:2165)
+==5981==    by 0x82C4494: openaux (dl-deps.c:64)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82C4C7B: _dl_map_object_deps (dl-deps.c:248)
+==5981==    by 0x82CFA0E: dl_open_worker_begin (dl-open.c:592)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82CEF99: dl_open_worker (dl-open.c:782)
+==5981==  Address 0x12c0a519 is 9 bytes inside a block of size 15 alloc'd
+==5981==    at 0x8B09899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5981==    by 0x82E81DF: malloc (rtld-malloc.h:56)
+==5981==    by 0x82E81DF: strdup (strdup.c:42)
+==5981==    by 0x82C9594: decompose_rpath (dl-load.c:629)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:696)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:677)
+==5981==    by 0x82CBBF5: _dl_map_object (dl-load.c:2165)
+==5981==    by 0x82C4494: openaux (dl-deps.c:64)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82C4C7B: _dl_map_object_deps (dl-deps.c:248)
+==5981==    by 0x82CFA0E: dl_open_worker_begin (dl-open.c:592)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82CEF99: dl_open_worker (dl-open.c:782)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82CF34D: _dl_open (dl-open.c:883)
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x82E96A8: strncmp (strcmp.S:172)
+==5981==    by 0x82C768D: is_dst (dl-load.c:216)
+==5981==    by 0x82C8F79: _dl_dst_substitute (dl-load.c:295)
+==5981==    by 0x82C92B7: fillin_rpath.isra.0 (dl-load.c:483)
+==5981==    by 0x82C9602: decompose_rpath (dl-load.c:654)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:696)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:677)
+==5981==    by 0x82CBBF5: _dl_map_object (dl-load.c:2165)
+==5981==    by 0x82C4494: openaux (dl-deps.c:64)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82C4C7B: _dl_map_object_deps (dl-deps.c:248)
+==5981==    by 0x82CFA0E: dl_open_worker_begin (dl-open.c:592)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82CEF99: dl_open_worker (dl-open.c:782)
+==5981==  Address 0x12c0a519 is 9 bytes inside a block of size 15 alloc'd
+==5981==    at 0x8B09899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5981==    by 0x82E81DF: malloc (rtld-malloc.h:56)
+==5981==    by 0x82E81DF: strdup (strdup.c:42)
+==5981==    by 0x82C9594: decompose_rpath (dl-load.c:629)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:696)
+==5981==    by 0x82CBBF5: cache_rpath (dl-load.c:677)
+==5981==    by 0x82CBBF5: _dl_map_object (dl-load.c:2165)
+==5981==    by 0x82C4494: openaux (dl-deps.c:64)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82C4C7B: _dl_map_object_deps (dl-deps.c:248)
+==5981==    by 0x82CFA0E: dl_open_worker_begin (dl-open.c:592)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82CEF99: dl_open_worker (dl-open.c:782)
+==5981==    by 0x8D8EC87: _dl_catch_exception (dl-error-skeleton.c:208)
+==5981==    by 0x82CF34D: _dl_open (dl-open.c:883)
+==5981== 
+Vulkan API 1.3.255 - Forward+ - Using Vulkan Device #0: Intel - Intel(R) Graphics (ADL GT2)
+ 
+freeing plugin control
+==5981== Invalid read of size 8
+==5981==    at 0x207A25E: _print_handler_impl (editor_node.cpp:6674)
+==5981==    by 0x207A25E: EditorNode::_print_handler_impl(String const&, bool, bool) (editor_node.cpp:6672)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x2ce331a0 is 1,472 bytes inside a block of size 3,392 free'd
+==5981==    at 0x8B0C27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5981==    by 0x322000B: memdelete<Node> (memory.h:112)
+==5981==    by 0x322000B: memdelete<Node> (memory.h:104)
+==5981==    by 0x322000B: Node::_notification(int) (node.cpp:211)
+==5981==    by 0x5470E47: Object::notification(int, bool) (object.cpp:796)
+==5981==    by 0x54741ED: _predelete (object.cpp:197)
+==5981==    by 0x54741ED: predelete_handler(Object*) (object.cpp:1890)
+==5981==    by 0x3258A33: memdelete<Window> (memory.h:105)
+==5981==    by 0x3258A33: SceneTree::finalize() (scene_tree.cpp:628)
+==5981==    by 0xCDCFED: main (godot_linuxbsd.cpp:74)
+==5981==  Block was alloc'd at
+==5981==    at 0x8B09899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5981==    by 0x4F02C56: Memory::alloc_static(unsigned long, bool) (memory.cpp:75)
+==5981==    by 0xD66D9D: Main::start() (main.cpp:3077)
+==5981==    by 0xCDCFD7: main (godot_linuxbsd.cpp:72)
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2073B6B: _get_size (cowdata.h:81)
+==5981==    by 0x2073B6B: size (cowdata.h:131)
+==5981==    by 0x2073B6B: size (vector.h:93)
+==5981==    by 0x2073B6B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:216)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2073B86: size (cowdata.h:133)
+==5981==    by 0x2073B86: size (vector.h:93)
+==5981==    by 0x2073B86: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:216)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cdc is 19,180 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x54F3064: _get_size (cowdata.h:81)
+==5981==    by 0x54F3064: size (cowdata.h:131)
+==5981==    by 0x54F3064: size (ustring.h:217)
+==5981==    by 0x54F3064: length (ustring.h:273)
+==5981==    by 0x54F3064: String::operator==(String const&) const (ustring.cpp:670)
+==5981==    by 0x2073D3C: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:216)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236d20 is 19,248 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x54F3073: size (cowdata.h:133)
+==5981==    by 0x54F3073: size (ustring.h:217)
+==5981==    by 0x54F3073: length (ustring.h:273)
+==5981==    by 0x54F3073: String::operator==(String const&) const (ustring.cpp:670)
+==5981==    by 0x2073D3C: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:216)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x11c254cc is 12 bytes inside an unallocated block of size 272 in arena "client"
+==5981== 
+==5981== Invalid read of size 1
+==5981==    at 0x207309B: EditorLog::_add_log_line(EditorLog::LogMessage&, bool) (editor_log.cpp:278)
+==5981==    by 0x2073BEB: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:226)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25040 is 1,776 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2073C07: _get_size (cowdata.h:81)
+==5981==    by 0x2073C07: size (cowdata.h:131)
+==5981==    by 0x2073C07: size (vector.h:93)
+==5981==    by 0x2073C07: push_back (vector.h:316)
+==5981==    by 0x2073C07: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2073C17: push_back (vector.h:316)
+==5981==    by 0x2073C17: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cdc is 19,180 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x207999C: _get_size (cowdata.h:81)
+==5981==    by 0x207999C: size (cowdata.h:131)
+==5981==    by 0x207999C: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:264)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x20799AB: size (cowdata.h:133)
+==5981==    by 0x20799AB: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:264)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cdc is 19,180 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2079864: CowData<EditorLog::LogMessage>::_copy_on_write() (cowdata.h:223)
+==5981==    by 0x20799C7: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:278)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x207986C: load (atomic_base.h:488)
+==5981==    by 0x207986C: get (safe_refcount.h:74)
+==5981==    by 0x207986C: CowData<EditorLog::LogMessage>::_copy_on_write() (cowdata.h:229)
+==5981==    by 0x20799C7: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:278)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cd8 is 19,176 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2079B40: _get_size (cowdata.h:81)
+==5981==    by 0x2079B40: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:307)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2079A78: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:307)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cdc is 19,180 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid write of size 8
+==5981==    at 0x2079AA0: CowData (cowdata.h:189)
+==5981==    by 0x2079AA0: String (ustring.h:456)
+==5981==    by 0x2079AA0: LogMessage (editor_log.h:64)
+==5981==    by 0x2079AA0: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:308)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236d30 is 19,264 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid write of size 4
+==5981==    at 0x2079AAB: LogMessage (editor_log.h:64)
+==5981==    by 0x2079AAB: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:308)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236d3c is 19,276 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid write of size 4
+==5981==    at 0x2079AB7: Error CowData<EditorLog::LogMessage>::resize<false>(int) (cowdata.h:314)
+==5981==    by 0x2073C2B: resize (vector.h:94)
+==5981==    by 0x2073C2B: push_back (vector.h:316)
+==5981==    by 0x2073C2B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cdc is 19,180 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2073C34: _get_size (cowdata.h:81)
+==5981==    by 0x2073C34: size (cowdata.h:131)
+==5981==    by 0x2073C34: size (vector.h:93)
+==5981==    by 0x2073C34: push_back (vector.h:318)
+==5981==    by 0x2073C34: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2073C44: size (cowdata.h:133)
+==5981==    by 0x2073C44: size (vector.h:93)
+==5981==    by 0x2073C44: push_back (vector.h:318)
+==5981==    by 0x2073C44: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cdc is 19,180 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2079864: CowData<EditorLog::LogMessage>::_copy_on_write() (cowdata.h:223)
+==5981==    by 0x2073C5B: set (cowdata.h:144)
+==5981==    by 0x2073C5B: set (vector.h:92)
+==5981==    by 0x2073C5B: push_back (vector.h:318)
+==5981==    by 0x2073C5B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x207986C: load (atomic_base.h:488)
+==5981==    by 0x207986C: get (safe_refcount.h:74)
+==5981==    by 0x207986C: CowData<EditorLog::LogMessage>::_copy_on_write() (cowdata.h:229)
+==5981==    by 0x2073C5B: set (cowdata.h:144)
+==5981==    by 0x2073C5B: set (vector.h:92)
+==5981==    by 0x2073C5B: push_back (vector.h:318)
+==5981==    by 0x2073C5B: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236cd8 is 19,176 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2073C66: set (cowdata.h:145)
+==5981==    by 0x2073C66: set (vector.h:92)
+==5981==    by 0x2073C66: push_back (vector.h:318)
+==5981==    by 0x2073C66: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db257f0 is 3,744 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0xCEB6FD: CowData<char32_t>::_ref(CowData<char32_t> const&) (cowdata.h:394)
+==5981==    by 0x2073C74: operator= (ustring.h:458)
+==5981==    by 0x2073C74: operator= (editor_log.h:59)
+==5981==    by 0x2073C74: set (cowdata.h:145)
+==5981==    by 0x2073C74: set (vector.h:92)
+==5981==    by 0x2073C74: push_back (vector.h:318)
+==5981==    by 0x2073C74: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236d30 is 19,264 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid write of size 8
+==5981==    at 0xCEB714: CowData<char32_t>::_ref(CowData<char32_t> const&) (cowdata.h:399)
+==5981==    by 0x2073C74: operator= (ustring.h:458)
+==5981==    by 0x2073C74: operator= (editor_log.h:59)
+==5981==    by 0x2073C74: set (cowdata.h:145)
+==5981==    by 0x2073C74: set (vector.h:92)
+==5981==    by 0x2073C74: push_back (vector.h:318)
+==5981==    by 0x2073C74: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236d30 is 19,264 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid write of size 8
+==5981==    at 0xCEB740: CowData<char32_t>::_ref(CowData<char32_t> const&) (cowdata.h:406)
+==5981==    by 0x2073C74: operator= (ustring.h:458)
+==5981==    by 0x2073C74: operator= (editor_log.h:59)
+==5981==    by 0x2073C74: set (cowdata.h:145)
+==5981==    by 0x2073C74: set (vector.h:92)
+==5981==    by 0x2073C74: push_back (vector.h:318)
+==5981==    by 0x2073C74: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236d30 is 19,264 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid write of size 8
+==5981==    at 0x2073C79: operator= (editor_log.h:59)
+==5981==    by 0x2073C79: set (cowdata.h:145)
+==5981==    by 0x2073C79: set (vector.h:92)
+==5981==    by 0x2073C79: push_back (vector.h:318)
+==5981==    by 0x2073C79: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:227)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x4a236d38 is 19,272 bytes inside an unallocated block of size 59,232 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2078E19: _lookup_pos (hash_map.h:104)
+==5981==    by 0x2078E19: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25820 is 3,792 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2078E1C: _lookup_pos (hash_map.h:100)
+==5981==    by 0x2078E1C: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25800 is 3,760 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2078E35: _lookup_pos (hash_map.h:100)
+==5981==    by 0x2078E35: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25824 is 3,796 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x207902B: _insert (hash_map.h:225)
+==5981==    by 0x207902B: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25818 is 3,784 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid write of size 8
+==5981==    at 0x2079284: _insert (hash_map.h:226)
+==5981==    by 0x2079284: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25810 is 3,776 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid write of size 8
+==5981==    at 0x2079043: _insert (hash_map.h:227)
+==5981==    by 0x2079043: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25818 is 3,784 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x207908C: _insert_with_hash (hash_map.h:130)
+==5981==    by 0x207908C: _insert (hash_map.h:239)
+==5981==    by 0x207908C: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25820 is 3,792 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x207908F: _insert_with_hash (hash_map.h:138)
+==5981==    by 0x207908F: _insert (hash_map.h:239)
+==5981==    by 0x207908F: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25808 is 3,768 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x20790A2: _insert_with_hash (hash_map.h:139)
+==5981==    by 0x20790A2: _insert (hash_map.h:239)
+==5981==    by 0x20790A2: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25800 is 3,760 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x20790C0: _insert_with_hash (hash_map.h:138)
+==5981==    by 0x20790C0: _insert (hash_map.h:239)
+==5981==    by 0x20790C0: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db5c904 is 6,884 bytes inside an unallocated block of size 46,384 in arena "client"
+==5981== 
+==5981== Invalid write of size 8
+==5981==    at 0x2079135: _insert_with_hash (hash_map.h:139)
+==5981==    by 0x2079135: _insert (hash_map.h:239)
+==5981==    by 0x2079135: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db5c9b8 is 7,064 bytes inside an unallocated block of size 46,384 in arena "client"
+==5981== 
+==5981== Invalid write of size 4
+==5981==    at 0x207913D: _insert_with_hash (hash_map.h:140)
+==5981==    by 0x207913D: _insert (hash_map.h:239)
+==5981==    by 0x207913D: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db5c904 is 6,884 bytes inside an unallocated block of size 46,384 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2079140: _insert_with_hash (hash_map.h:142)
+==5981==    by 0x2079140: _insert (hash_map.h:239)
+==5981==    by 0x2079140: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:512)
+==5981==    by 0x2073CBA: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25824 is 3,796 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2078E19: _lookup_pos (hash_map.h:104)
+==5981==    by 0x2078E19: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CC8: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25820 is 3,792 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2078E1C: _lookup_pos (hash_map.h:100)
+==5981==    by 0x2078E1C: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CC8: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25800 is 3,760 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2078E35: _lookup_pos (hash_map.h:100)
+==5981==    by 0x2078E35: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CC8: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25824 is 3,796 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2078EA0: _lookup_pos (hash_map.h:111)
+==5981==    by 0x2078EA0: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CC8: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db25808 is 3,768 bytes inside an unallocated block of size 7,072 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2078EAA: _lookup_pos (hash_map.h:111)
+==5981==    by 0x2078EAA: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CC8: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db5c904 is 6,884 bytes inside an unallocated block of size 46,384 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2078F07: compare (hashfuncs.h:398)
+==5981==    by 0x2078F07: _lookup_pos (hash_map.h:119)
+==5981==    by 0x2078F07: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:510)
+==5981==    by 0x2073CC8: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db5c9b8 is 7,064 bytes inside an unallocated block of size 46,384 in arena "client"
+==5981== 
+==5981== Invalid read of size 8
+==5981==    at 0x2078F11: HashMap<EditorLog::MessageType, EditorLog::LogFilter*, HashMapHasherDefault, HashMapComparatorDefault<EditorLog::MessageType>, DefaultTypedAllocator<HashMapElement<EditorLog::MessageType, EditorLog::LogFilter*> > >::operator[](EditorLog::MessageType const&) (hash_map.h:514)
+==5981==    by 0x2073CC8: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x3db5c9b8 is 7,064 bytes inside an unallocated block of size 46,384 in arena "client"
+==5981== 
+==5981== Invalid read of size 4
+==5981==    at 0x2073CCF: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==5981== 
+==5981== Invalid read of size 1
+==5981==    at 0x321A4E0: is_accessible_from_caller_thread (node.h:548)
+==5981==    by 0x321A4E0: Node::propagate_notification(int) (node.cpp:2222)
+==5981==    by 0x5470E47: Object::notification(int, bool) (object.cpp:796)
+==5981==    by 0xCEAC8E: handle_crash(int) (crash_handler_linuxbsd.cpp:68)
+==5981==    by 0x8C5C51F: ??? (in /usr/lib/x86_64-linux-gnu/libc.so.6)
+==5981==    by 0x2073CCE: get_message_count (editor_log.h:107)
+==5981==    by 0x2073CCE: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  Address 0x230 is not stack'd, malloc'd or (recently) free'd
+==5981== 
+==5981== 
+==5981== Process terminating with default action of signal 11 (SIGSEGV)
+==5981==  Access not within mapped region at address 0x230
+==5981==    at 0x321A4E0: is_accessible_from_caller_thread (node.h:548)
+==5981==    by 0x321A4E0: Node::propagate_notification(int) (node.cpp:2222)
+==5981==    by 0x5470E47: Object::notification(int, bool) (object.cpp:796)
+==5981==    by 0xCEAC8E: handle_crash(int) (crash_handler_linuxbsd.cpp:68)
+==5981==    by 0x8C5C51F: ??? (in /usr/lib/x86_64-linux-gnu/libc.so.6)
+==5981==    by 0x2073CCE: get_message_count (editor_log.h:107)
+==5981==    by 0x2073CCE: EditorLog::_process_message(String const&, EditorLog::MessageType) (editor_log.cpp:230)
+==5981==    by 0x2073FCB: EditorLog::add_message(String const&, EditorLog::MessageType) (editor_log.cpp:242)
+==5981==    by 0x20E9F32: call_with_variant_args_static<const String&, bool, bool, 0, 1, 2> (binder_common.h:777)
+==5981==    by 0x20E9F32: call_with_variant_args_static_ret<const String&, bool, bool> (binder_common.h:846)
+==5981==    by 0x20E9F32: CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_method_pointer.h:308)
+==5981==    by 0x519DF01: CallableCustomBind::call(Variant const**, int, Variant&, Callable::CallError&) const (callable_bind.cpp:144)
+==5981==    by 0x546ADDA: CallQueue::_call_function(Callable const&, Variant const*, int, bool) (message_queue.cpp:219)
+==5981==    by 0x546E554: CallQueue::flush() (message_queue.cpp:320)
+==5981==    by 0xD54A59: Main::cleanup(bool) (main.cpp:3563)
+==5981==    by 0xCDCFF4: main (godot_linuxbsd.cpp:76)
+==5981==  If you believe this happened as a result of a stack
+==5981==  overflow in your program's main thread (unlikely but
+==5981==  possible), you can try to increase the size of the
+==5981==  main thread stack using the --main-stacksize= flag.
+==5981==  The main thread stack size used in this run was 8388608.
+==5981== 
+==5981== HEAP SUMMARY:
+==5981==     in use at exit: 229,776,057 bytes in 251,179 blocks
+==5981==   total heap usage: 14,424,892 allocs, 14,149,111 frees, 3,113,043,936 bytes allocated
+==5981== 
+==5981== LEAK SUMMARY:
+==5981==    definitely lost: 1,072 bytes in 7 blocks
+==5981==    indirectly lost: 644 bytes in 26 blocks
+==5981==      possibly lost: 210,445,646 bytes in 232,950 blocks
+==5981==    still reachable: 12,358,371 bytes in 38,670 blocks
+==5981==         suppressed: 0 bytes in 0 blocks
+==5981== Rerun with --leak-check=full to see details of leaked memory
+==5981== 
+==5981== For lists of detected and suppressed errors, rerun with: -s
+==5981== ERROR SUMMARY: 51 errors from 50 contexts (suppressed: 0 from 0)
+Segmentation fault (core dumped)
