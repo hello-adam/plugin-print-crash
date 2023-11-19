@@ -1,0 +1,935 @@
+[~] gdb -ex run --args ./code/godot/bin/godot.linuxbsd.editor.x86_64 ./code/plugin-print-crash/project.godot --verbose
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./code/godot/bin/godot.linuxbsd.editor.x86_64...
+Starting program: /home/adam/code/godot/bin/godot.linuxbsd.editor.x86_64 ./code/plugin-print-crash/project.godot --verbose
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after vfork from child process 466149]
+[New Thread 0x7ffff69ff640 (LWP 466151)]
+[New Thread 0x7ffff61fe640 (LWP 466152)]
+[New Thread 0x7ffff59fd640 (LWP 466153)]
+[New Thread 0x7ffff51fc640 (LWP 466154)]
+[New Thread 0x7ffff49fb640 (LWP 466155)]
+[New Thread 0x7ffff41fa640 (LWP 466156)]
+[New Thread 0x7ffff39f9640 (LWP 466157)]
+[New Thread 0x7ffff31f8640 (LWP 466158)]
+[New Thread 0x7ffff29f7640 (LWP 466159)]
+[New Thread 0x7ffff21f6640 (LWP 466160)]
+[New Thread 0x7ffff19f5640 (LWP 466161)]
+[New Thread 0x7ffff11f4640 (LWP 466162)]
+[New Thread 0x7ffff09f3640 (LWP 466163)]
+Godot Engine v4.1.3.stable.custom_build.fc7920185 - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Xshape 1.1 detected.
+Xinerama 1.1 detected.
+Xrandr 1.6 detected.
+Xrender 0.11 detected.
+Xinput 2.2 detected.
+XInput: Refreshing devices.
+XInput: No touch devices found.
+[New Thread 0x7fffe39ff640 (LWP 466164)]
+Vulkan devices:
+  #0: Intel Intel(R) Graphics (ADL GT2) - Supported, Integrated
+  #1: Unknown llvmpipe (LLVM 15.0.7, 256 bits) - Supported, CPU
+Vulkan API 1.3.246 - Forward+ - Using Vulkan Device #0: Intel - Intel(R) Graphics (ADL GT2)
+Optional extension VK_GOOGLE_display_timing not found
+- Vulkan Variable Rate Shading supported:
+  Pipeline fragment shading rate
+- Vulkan multiview supported:
+  max view count: 16
+  max instances: 268435455
+- Vulkan subgroup:
+  size: 32
+  stages: STAGE_VERTEX, STAGE_TESSELLATION_CONTROL, STAGE_TESSELLATION_EVALUATION, STAGE_GEOMETRY, STAGE_FRAGMENT, STAGE_COMPUTE
+  supported ops: FEATURE_BASIC, FEATURE_VOTE, FEATURE_ARITHMETIC, FEATURE_BALLOT, FEATURE_SHUFFLE, FEATURE_SHUFFLE_RELATIVE, FEATURE_CLUSTERED, FEATURE_QUAD
+  quad operations in all stages
+[New Thread 0x7fffe2f3e640 (LWP 466165)]
+[New Thread 0x7fffe273d640 (LWP 466166)]
+Startup PSO cache (1.4 MiB)
+[New Thread 0x7fffe1b3a640 (LWP 466167)]
+[New Thread 0x7fffe1339640 (LWP 466168)]
+[New Thread 0x7fffe0b38640 (LWP 466169)]
+[Thread 0x7fffe273d640 (LWP 466166) exited]
+[New Thread 0x7fffe273d640 (LWP 466170)]
+[New Thread 0x7fffcbfff640 (LWP 466171)]
+ScreenSaver: DBus 1.12.20 detected.
+PortalDesktop: DBus 1.12.20 detected.
+Using "default" pen tablet driver...
+Creating VMA small objects pool for memory type index 0
+Shader 'CanvasSdfShaderRD' SHA256: d4b7dab09e8acc0009f4b62e1e6d7d25b37c59d116f39a4c5de8d8cf38286ebf
+Shader 'SkeletonShaderRD' SHA256: 3fac299dff340ce8fe0f5b4eaee57f528e99986720441d3ea2b6199afd106299
+Shader 'SortShaderRD' SHA256: 1df57c0b2f1a725d34fe319c6df66f54ad90cbfa2a8c33b448013d538729cc38
+Shader 'ParticlesShaderRD' SHA256: 26e3f31657a368f16968083c2af2a15c816ccf1b56d0363d53b43d92e62e6f8b
+Shader 'ParticlesCopyShaderRD' SHA256: f34965002c1b5984d45def110c1104a7e424c449b4a5e63eaff72d82b8b89e16
+Shader 'CanvasShaderRD' SHA256: 247269c611c0e7b77fe06eebf18e3a19275fdc29dc5ff9edeee494a211833e2b
+Shader 'CanvasOcclusionShaderRD' SHA256: 644cce8555d8ba76211b286cbd14b438cd079b941fa73dee2bd29c74e3f38e4a
+Shader 'ClusterRenderShaderRD' SHA256: 13d4926ef77b6d9c8914482c754666e799d11af1939a8a19e4288a3d178e0b17
+Shader 'ClusterStoreShaderRD' SHA256: c61de32afbd79d62ce87d843265fcab47401dde70d382f06d9e3fad2024b1822
+Shader 'ClusterDebugShaderRD' SHA256: 993fa2364b7acae71a5210c10a3a26fbac2374527aaf7ddc3a82328d6786941d
+Shader 'SceneForwardClusteredShaderRD' SHA256: 7960b82d30f802faa83ad42aca1349b8a1b0bf17e74dc3587c145eaa8e0522e6
+Shader 'ResolveShaderRD' SHA256: 916994bc742a7e1e7f2a402016e94c7ba112d8f74372d64eac4c5509410fe34d
+Shader 'TaaResolveShaderRD' SHA256: 750c6cd968046c25a6f12d6e12c4e877cdb08648e83e11a3ea700370278c7093
+Shader 'SsEffectsDownsampleShaderRD' SHA256: 633aea82d20e6e7a88353fd5923a1cf49f3c9f2dd9169cc281b371e25f57b689
+Shader 'SsilShaderRD' SHA256: e58231ee530ae7373450a981480435b901c557287c3bf2a8aa7550a00dae61dd
+Shader 'SsilImportanceMapShaderRD' SHA256: ca411aaede5bfd83f808f811eed6b588f3266502c93a6c935b10f9134ff7e7df
+Shader 'SsilBlurShaderRD' SHA256: 4a358b5e5cc548ef4e11c264ff710d892f05e9e2f972d3f79cd1aff7a88b59de
+Shader 'SsilInterleaveShaderRD' SHA256: b26eeac08699d927ee0cb669b04e91c41e5109b6e341b552bfe0c2eeb2720d49
+Shader 'SsaoShaderRD' SHA256: 0202d4fbae7e11f5a83f77fc240a38aef843788d6cd0b6801d659cf94cfaaec4
+Shader 'SsaoImportanceMapShaderRD' SHA256: 445907b93e9ee92c3fa3ded6653427d76af7469987275e787761bb45f1105723
+Shader 'SsaoBlurShaderRD' SHA256: 8666dafa101243f5937c9c03a99ce7ee0ab53a8e268cb0417f6b3141b5b8d526
+Shader 'SsaoInterleaveShaderRD' SHA256: 1d04a4491c64099a4cacc0220ab78ac6b7ca4dbe7034b6d4dc61acffcff29a41
+Shader 'ScreenSpaceReflectionScaleShaderRD' SHA256: 445e9920745534c94dd36f6720110b9585aeafc94972a2598b47cfe48fece78d
+Shader 'ScreenSpaceReflectionShaderRD' SHA256: 2f4c15a9b97beea62a7c784a9918c9d07a5871bf014188273d5b9180bb74329f
+Shader 'ScreenSpaceReflectionFilterShaderRD' SHA256: f2cc6bdc1582d327810c4e0f9ac2f39ddffa36b071097de2e0d33ae82d5a38ae
+Shader 'SubsurfaceScatteringShaderRD' SHA256: ed5e336dc17e84729bfd3801e18395314d0cbcf06955d3fdc4df4ce355b43ea4
+Shader 'SkyShaderRD' SHA256: 441e3396564d50c158a288d50318e949750a90ae4fed77798c9df4b90d67a08c
+Shader 'VoxelGiShaderRD' SHA256: 83dc52217e896e4c7ad2b45f79d1549cb1c051ce716e70337fdd3e0d795819b0
+Shader 'VoxelGiDebugShaderRD' SHA256: 7a9cf03485f5c39b71680f0a868597cba3762b2e73ecef2f160f7e6ac6367645
+Shader 'SdfgiPreprocessShaderRD' SHA256: c93640cd216101561a3d46d5434b303c52daaaf8aef006a5c2f78786b6c847a9
+Shader 'SdfgiDirectLightShaderRD' SHA256: 4eb7e1cc9a3b97da31883ac1f35c47a7b44bcb6f0a4f94e4ac3abb146d9ba448
+Shader 'SdfgiIntegrateShaderRD' SHA256: 3bd094b60e6f860cfd864e27330e6d8df5bf0d902151dcbcdf2a5c7a675b1caf
+Shader 'GiShaderRD' SHA256: 364faf5adecc7cec94e0b6d8423347e0bb897859660167a58c859a50b8d8bb37
+Shader 'SdfgiDebugShaderRD' SHA256: 64b0e7d19bdf335562a8b02d07d4abd8b27e34bc9e48ca84031f4795b3ec38c6
+Shader 'SdfgiDebugProbesShaderRD' SHA256: 48d67b19985d10222164847031cc3730d9859229e0820a64cc49d66e9d82cc75
+Shader 'VolumetricFogShaderRD' SHA256: 965dbac2080f7915e51479584891ebdb0f3a072d1d80542e9b20e7e35180bf97
+Shader 'VolumetricFogProcessShaderRD' SHA256: 03cd8586d8b791c23635e4fda445566267818a5ff4cd2cf589a7c5a896221301
+Shader 'BokehDofShaderRD' SHA256: e190402da50230eb0bd9e08a3fd0f6ebc7edb39e562ce1db05005c49158a6432
+Shader 'CopyShaderRD' SHA256: c6e214849467a83f1fa6014a1a4f93663551dca599114cbcdcac6fb1db802920
+Shader 'CopyToFbShaderRD' SHA256: 88d65a064a23090cc51d7cd6b1f42a9f67d4555ee85fbb7bffe9e89fd55e1f01
+Shader 'CubeToDpShaderRD' SHA256: fda76f02243de8baca83234e04733f2eb0366a401b11a6a3998868e5d93a3004
+Shader 'CubemapDownsamplerShaderRD' SHA256: 46d846dc23d4dc9e3baf2d118988b308b7a5a50b17a00bf5a613d366f02fa019
+Shader 'CubemapFilterShaderRD' SHA256: 41f561d0d3d77ac1fcf348bcf27cb960c3d999dc3ab7194939b083cf4344e8bd
+Shader 'CubemapRoughnessShaderRD' SHA256: e9f4ee4c3956eeda300414d6f4f77b42011c2ca9d435658a973b655205f12416
+Shader 'SpecularMergeShaderRD' SHA256: aba9d638bce3bd86ec4adadcd0e24226281791aebc5c959b985a40aafbac9440
+Shader 'LuminanceReduceShaderRD' SHA256: 3e0a6b285bfab18815628726c822be20e9df6c0e2ff989db29b26673126dd8a1
+Shader 'TonemapShaderRD' SHA256: ce7ee599fcc63a30cbc71b064bcd56eb70ea956cda37109703c8c2d6a6560e4f
+Shader 'FsrUpscaleShaderRD' SHA256: 9fbb6a80e317d71cca9f1125b346af0fe45a18f1d4694050f0ca8aeee3b9704c
+Shader 'BlitShaderRD' SHA256: fa805e6db095699a17fdea7f9c162bfcc71878686c66f832357701b04dbb7a93
+JoypadLinux: udev enabled and loaded successfully.
+[New Thread 0x7fffc95fc640 (LWP 466173)]
+[New Thread 0x7fffc8dfb640 (LWP 466174)]
+PulseAudio 15.99.0 detected.
+PulseAudio: context other
+PulseAudio: context other
+PulseAudio: context other
+PulseAudio: context ready
+PulseAudio: Detecting channels for device: alsa_output.pci-0000_00_1f.3.analog-stereo
+PulseAudio: detected 2 output channels
+PulseAudio: audio buffer frames: 512 calculated output latency: 11ms
+[New Thread 0x7fffbbfff640 (LWP 466175)]
+ 
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+[New Thread 0x7fffbb7fe640 (LWP 466176)]
+CORE API HASH: 1133376617
+EDITOR API HASH: 884771216
+Regenerating editor help cache
+Class 'EditorPropertyNameProcessor' is not exposed, skipping.
+Class 'FramebufferCacheRD' is not exposed, skipping.
+Class 'GDScriptEditorTranslationParserPlugin' is not exposed, skipping.
+Class 'GDScriptNativeClass' is not exposed, skipping.
+Class 'GLTFDocumentExtensionPhysics' is not exposed, skipping.
+Class 'GLTFDocumentExtensionTextureWebP' is not exposed, skipping.
+Class 'GodotPhysicsServer2D' is not exposed, skipping.
+Class 'GodotPhysicsServer3D' is not exposed, skipping.
+Class 'IPUnix' is not exposed, skipping.
+Class 'MovieWriterMJPEG' is not exposed, skipping.
+Class 'MovieWriterPNGWAV' is not exposed, skipping.
+Class 'ResourceFormatImporterSaver' is not exposed, skipping.
+Class 'ResourceImporterMP3' is not exposed, skipping.
+Class 'ResourceImporterOggVorbis' is not exposed, skipping.
+Class 'SceneCacheInterface' is not exposed, skipping.
+Class 'SceneRPCInterface' is not exposed, skipping.
+Class 'SceneReplicationInterface' is not exposed, skipping.
+Class 'UniformSetCacheRD' is not exposed, skipping.
+[New Thread 0x7fffbaffd640 (LWP 466177)]
+EditorSettings: Load OK!
+[New Thread 0x7fffba7fc640 (LWP 466178)]
+[New Thread 0x7fffb89a3640 (LWP 466179)]
+[New Thread 0x7fffa3fff640 (LWP 466180)]
+[Thread 0x7fffbaffd640 (LWP 466177) exited]
+[New Thread 0x7fffbaffd640 (LWP 466181)]
+Loaded system CA certificates
+Creating VMA small objects pool for memory type index 2
+EditorSettings: Save OK!
+[Thread 0x7fffe273d640 (LWP 466170) exited]
+[New Thread 0x7fffe273d640 (LWP 466186)]
+[New Thread 0x7fffa37fe640 (LWP 466187)]
+[Thread 0x7fffa37fe640 (LWP 466187) exited]
+[New Thread 0x7fffa37fe640 (LWP 466188)]
+[Thread 0x7fffa37fe640 (LWP 466188) exited]
+[Thread 0x7fffbaffd640 (LWP 466181) exited]
+[Thread 0x7fffba7fc640 (LWP 466178) exited]
+[Thread 0x7fffb89a3640 (LWP 466179) exited]
+[Thread 0x7fffa3fff640 (LWP 466180) exited]
+EditorSettings: Save OK!
+XR: Clearing primary interface
+XR: Removed interfaceNative mobile
+XR: Removed interfaceOpenXR
+[Thread 0x7fffbb7fe640 (LWP 466176) exited]
+PulseAudio: context terminated
+[Thread 0x7fffbbfff640 (LWP 466175) exited]
+[Thread 0x7fffc8dfb640 (LWP 466174) exited]
+[Thread 0x7fffc95fc640 (LWP 466173) exited]
+[Thread 0x7fffcbfff640 (LWP 466171) exited]
+[Thread 0x7fffe273d640 (LWP 466186) exited]
+[Thread 0x7fffe2f3e640 (LWP 466165) exited]
+[Thread 0x7fffe1339640 (LWP 466168) exited]
+[Thread 0x7fffe0b38640 (LWP 466169) exited]
+[Thread 0x7fffe1b3a640 (LWP 466167) exited]
+[Thread 0x7fffe39ff640 (LWP 466164) exited]
+[Thread 0x7ffff09f3640 (LWP 466163) exited]
+[Thread 0x7ffff11f4640 (LWP 466162) exited]
+[Thread 0x7ffff19f5640 (LWP 466161) exited]
+[Thread 0x7ffff21f6640 (LWP 466160) exited]
+[Thread 0x7ffff29f7640 (LWP 466159) exited]
+[Thread 0x7ffff31f8640 (LWP 466158) exited]
+[Thread 0x7ffff39f9640 (LWP 466157) exited]
+[Thread 0x7ffff41fa640 (LWP 466156) exited]
+[Thread 0x7ffff49fb640 (LWP 466155) exited]
+[Thread 0x7ffff51fc640 (LWP 466154) exited]
+[Thread 0x7ffff59fd640 (LWP 466153) exited]
+[Thread 0x7ffff61fe640 (LWP 466152) exited]
+[Thread 0x7ffff69ff640 (LWP 466151) exited]
+Orphan StringName: variant_booleanize
+Orphan StringName: string_new_with_utf8_chars_and_len
+Orphan StringName: OP_MODULE
+Orphan StringName: KEY_SYSREQ
+Orphan StringName: file_access_store_buffer
+Orphan StringName: PROPERTY_HINT_NONE
+Orphan StringName: string_operator_index_const
+Orphan StringName: dictionary_operator_index
+Orphan StringName: PROPERTY_USAGE_DEFERRED_SET_RESOURCE
+Orphan StringName: INLINE_ALIGNMENT_TO_BASELINE
+Orphan StringName: JOY_BUTTON_DPAD_LEFT
+Orphan StringName: KEY_KP_SUBTRACT
+Orphan StringName: OP_LESS
+Orphan StringName: ERR_ALREADY_IN_USE
+Orphan StringName: ERR_CANT_FORK
+Orphan StringName: MIDI_MESSAGE_CONTINUE
+Orphan StringName: MOUSE_BUTTON_MASK_LEFT
+Orphan StringName: ERR_SKIP
+Orphan StringName: KEY_ENTER
+Orphan StringName: JOY_BUTTON_LEFT_STICK
+Orphan StringName: JOY_BUTTON_BACK
+Orphan StringName: packed_int32_array_operator_index_const
+Orphan StringName: Vector2
+Orphan StringName: Vector3
+Orphan StringName: Vector4
+Orphan StringName: string_new_with_latin1_chars_and_len
+Orphan StringName: KEY_GLOBE
+Orphan StringName: PROPERTY_HINT_LAYERS_2D_PHYSICS
+Orphan StringName: MethodFlags
+Orphan StringName: OP_IN
+Orphan StringName: METHOD_FLAG_OBJECT_CORE
+Orphan StringName: TYPE_PACKED_VECTOR3_ARRAY
+Orphan StringName: OP_OR
+Orphan StringName: variant_call_static
+Orphan StringName: JOY_BUTTON_INVALID
+Orphan StringName: TYPE_RID
+Orphan StringName: HORIZONTAL_ALIGNMENT_RIGHT
+Orphan StringName: PROPERTY_HINT_ENUM
+Orphan StringName: worker_thread_pool_add_native_task
+Orphan StringName: MIDI_MESSAGE_AFTERTOUCH
+Orphan StringName: KEY_MASK_SHIFT
+Orphan StringName: METHOD_FLAG_CONST
+Orphan StringName: ERR_DATABASE_CANT_WRITE
+Orphan StringName: packed_int64_array_operator_index
+Orphan StringName: variant_set_named
+Orphan StringName: ERR_DOES_NOT_EXIST
+Orphan StringName: MOUSE_BUTTON_WHEEL_DOWN
+Orphan StringName: JoyAxis
+Orphan StringName: ERR_PARSE_ERROR
+Orphan StringName: KEY_SEMICOLON
+Orphan StringName: classdb_get_method_bind
+Orphan StringName: TYPE_PACKED_STRING_ARRAY
+Orphan StringName: KEY_MASK_CTRL
+Orphan StringName: ERR_FILE_MISSING_DEPENDENCIES
+Orphan StringName: Error
+Orphan StringName: KEY_SCROLLLOCK
+Orphan StringName: classdb_register_extension_class_method
+Orphan StringName: PROPERTY_HINT_TYPE_STRING
+Orphan StringName: KEY_BACKSPACE
+Orphan StringName: string_new_with_utf32_chars_and_len
+Orphan StringName: GroupViewport
+Orphan StringName: KEY_HOME
+Orphan StringName: JOY_AXIS_SDL_MAX
+Orphan StringName: ERR_BUG
+Orphan StringName: METHOD_FLAGS_DEFAULT
+Orphan StringName: MOUSE_BUTTON_MASK_MIDDLE
+Orphan StringName: Variant.Operator
+Orphan StringName: packed_float64_array_operator_index
+Orphan StringName: MouseButtonMask
+Orphan StringName: variant_construct
+Orphan StringName: KEY_ALT
+Orphan StringName: MIDI_MESSAGE_QUARTER_FRAME
+Orphan StringName: PROPERTY_HINT_LAYERS_3D_RENDER
+Orphan StringName: RID
+Orphan StringName: KEY_PRINT
+Orphan StringName: ERR_QUERY_FAILED
+Orphan StringName: KEY_LEFT
+Orphan StringName: KEY_BAR
+Orphan StringName: KEY_QUESTION
+Orphan StringName: INLINE_ALIGNMENT_TO_CENTER
+Orphan StringName: TYPE_DICTIONARY
+Orphan StringName: PROPERTY_USAGE_NONE
+Orphan StringName: KEY_BRACKETLEFT
+Orphan StringName: KEY_FORWARD
+Orphan StringName: KEY_LESS
+Orphan StringName: PROPERTY_USAGE_ARRAY
+Orphan StringName: PROPERTY_HINT_SAVE_FILE
+Orphan StringName: HORIZONTAL
+Orphan StringName: TYPE_PROJECTION
+Orphan StringName: PROPERTY_HINT_ENUM_SUGGESTION
+Orphan StringName: print_script_error
+Orphan StringName: ERR_LINK_FAILED
+Orphan StringName: Color
+Orphan StringName: TYPE_BASIS
+Orphan StringName: Sky
+Orphan StringName: KEY_QUOTELEFT
+Orphan StringName: variant_can_convert
+Orphan StringName: KEY_MEDIAPREVIOUS
+Orphan StringName: KEY_NUMBERSIGN
+Orphan StringName: OP_SHIFT_LEFT
+Orphan StringName: KEY_UNKNOWN
+Orphan StringName: JOY_BUTTON_DPAD_UP
+Orphan StringName: object_get_instance_id
+Orphan StringName: variant_iter_next
+Orphan StringName: string_to_utf16_chars
+Orphan StringName: KEY_SPACE
+Orphan StringName: MIDI_MESSAGE_SONG_POSITION_POINTER
+Orphan StringName: PROPERTY_USAGE_STORAGE
+Orphan StringName: KEY_INSERT
+Orphan StringName: packed_string_array_operator_index_const
+Orphan StringName: KEY_ESCAPE
+Orphan StringName: MIDI_MESSAGE_SYSTEM_EXCLUSIVE
+Orphan StringName: KEY_END
+Orphan StringName: KEY_F10
+Orphan StringName: KEY_F11
+Orphan StringName: KEY_F12
+Orphan StringName: KEY_F13
+Orphan StringName: KEY_F14
+Orphan StringName: KEY_F15
+Orphan StringName: KEY_F16
+Orphan StringName: KEY_F17
+Orphan StringName: KEY_F18
+Orphan StringName: KEY_F19
+Orphan StringName: KEY_F20
+Orphan StringName: KEY_F21
+Orphan StringName: KEY_F22
+Orphan StringName: KEY_F23
+Orphan StringName: KEY_F24
+Orphan StringName: KEY_F25
+Orphan StringName: KEY_F26
+Orphan StringName: KEY_F27
+Orphan StringName: KEY_F28
+Orphan StringName: KEY_F29
+Orphan StringName: KEY_F30
+Orphan StringName: KEY_F31
+Orphan StringName: KEY_F32
+Orphan StringName: KEY_F33
+Orphan StringName: KEY_F34
+Orphan StringName: KEY_F35
+Orphan StringName: PROPERTY_HINT_EXP_EASING
+Orphan StringName: variant_set_keyed
+Orphan StringName: mem_free
+Orphan StringName: INLINE_ALIGNMENT_TOP_TO
+Orphan StringName: KEY_KP_ADD
+Orphan StringName: KEY_CAPSLOCK
+Orphan StringName: CORNER_BOTTOM_LEFT
+Orphan StringName: JOY_BUTTON_A
+Orphan StringName: JOY_BUTTON_B
+Orphan StringName: PROPERTY_HINT_GLOBAL_SAVE_FILE
+Orphan StringName: JOY_BUTTON_X
+Orphan StringName: JOY_BUTTON_Y
+Orphan StringName: string_new_with_utf16_chars
+Orphan StringName: ERR_INVALID_PARAMETER
+Orphan StringName: variant_get_indexed
+Orphan StringName: HORIZONTAL_ALIGNMENT_LEFT
+Orphan StringName: Editor3DHandle
+Orphan StringName: KEY_STOP
+Orphan StringName: PROPERTY_HINT_GLOBAL_DIR
+Orphan StringName: INLINE_ALIGNMENT_TO_BOTTOM
+Orphan StringName: TYPE_BOOL
+Orphan StringName: JOY_BUTTON_TOUCHPAD
+Orphan StringName: TYPE_PLANE
+Orphan StringName: StatusSuccess
+Orphan StringName: INLINE_ALIGNMENT_TO_TOP
+Orphan StringName: METHOD_FLAG_VIRTUAL
+Orphan StringName: ERR_COMPILATION_FAILED
+Orphan StringName: string_operator_plus_eq_string
+Orphan StringName: KEY_SEARCH
+Orphan StringName: HORIZONTAL_ALIGNMENT_CENTER
+Orphan StringName: variant_get_ptr_indexed_setter
+Orphan StringName: PROPERTY_HINT_DIR
+Orphan StringName: PackedByteArray
+Orphan StringName: PROPERTY_HINT_NODE_TYPE
+Orphan StringName: ERR_INVALID_DECLARATION
+Orphan StringName: INLINE_ALIGNMENT_CENTER
+Orphan StringName: array_ref
+Orphan StringName: PROPERTY_USAGE_CLASS_IS_BITFIELD
+Orphan StringName: object_method_bind_call
+Orphan StringName: KEY_PARENRIGHT
+Orphan StringName: KEY_BACKTAB
+Orphan StringName: INLINE_ALIGNMENT_IMAGE_MASK
+Orphan StringName: ERR_FILE_BAD_PATH
+Orphan StringName: GuiResizer
+Orphan StringName: string_operator_index
+Orphan StringName: JOY_BUTTON_DPAD_RIGHT
+Orphan StringName: KEY_VOLUMEUP
+Orphan StringName: JOY_BUTTON_START
+Orphan StringName: SIDE_RIGHT
+Orphan StringName: PROPERTY_HINT_OBJECT_TOO_BIG
+Orphan StringName: ERR_ALREADY_EXISTS
+Orphan StringName: object_cast_to
+Orphan StringName: PROPERTY_USAGE_CATEGORY
+Orphan StringName: PROPERTY_USAGE_NEVER_DUPLICATE
+Orphan StringName: VERTICAL_ALIGNMENT_TOP
+Orphan StringName: KEY_PARENLEFT
+Orphan StringName: TYPE_PACKED_INT64_ARRAY
+Orphan StringName: KEY_COLON
+Orphan StringName: ERR_OUT_OF_MEMORY
+Orphan StringName: KEY_ASCIICIRCUM
+Orphan StringName: dictionary_operator_index_const
+Orphan StringName: print_error
+Orphan StringName: PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE
+Orphan StringName: KEY_SPECIAL
+Orphan StringName: GuiChecked
+Orphan StringName: KEY_ASTERISK
+Orphan StringName: KEY_COMMA
+Orphan StringName: MOUSE_BUTTON_WHEEL_LEFT
+Orphan StringName: GuiIndeterminate
+Orphan StringName: KEY_HYPER
+Orphan StringName: variant_duplicate
+Orphan StringName: ERR_FILE_NOT_FOUND
+Orphan StringName: TYPE_PACKED_INT32_ARRAY
+Orphan StringName: EulerOrder
+Orphan StringName: ERR_SCRIPT_FAILED
+Orphan StringName: TYPE_PACKED_BYTE_ARRAY
+Orphan StringName: KEY_AMPERSAND
+Orphan StringName: PROPERTY_HINT_RESOURCE_TYPE
+Orphan StringName: editor_add_plugin
+Orphan StringName: KEY_MASK_META
+Orphan StringName: MOUSE_BUTTON_LEFT
+Orphan StringName: string_to_utf8_chars
+Orphan StringName: array_set_typed
+Orphan StringName: variant_get_ptr_keyed_setter
+Orphan StringName: ERR_FILE_CORRUPT
+Orphan StringName: print_script_error_with_message
+Orphan StringName: variant_get_ptr_indexed_getter
+Orphan StringName: PROPERTY_USAGE_ALWAYS_DUPLICATE
+Orphan StringName: JOY_AXIS_TRIGGER_LEFT
+Orphan StringName: KEY_RIGHT
+Orphan StringName: INLINE_ALIGNMENT_BOTTOM
+Orphan StringName: JOY_AXIS_TRIGGER_RIGHT
+Orphan StringName: PROPERTY_HINT_HIDE_QUATERNION_EDIT
+Orphan StringName: CodeFoldedRightArrow
+Orphan StringName: object_get_instance_binding
+Orphan StringName: MIDI_MESSAGE_NOTE_ON
+Orphan StringName: EditorBoneHandle
+Orphan StringName: PROPERTY_USAGE_INTERNAL
+Orphan StringName: ERR_UNAUTHORIZED
+Orphan StringName: KEY_MEDIARECORD
+Orphan StringName: INLINE_ALIGNMENT_CENTER_TO
+Orphan StringName: TYPE_ARRAY
+Orphan StringName: file_access_get_buffer
+Orphan StringName: packed_color_array_operator_index_const
+Orphan StringName: PropertyHint
+Orphan StringName: JOY_BUTTON_SDL_MAX
+Orphan StringName: classdb_construct_object
+Orphan StringName: PROPERTY_USAGE_NO_INSTANCE_STATE
+Orphan StringName: variant_get_ptr_builtin_method
+Orphan StringName: variant_get_ptr_keyed_checker
+Orphan StringName: TYPE_STRING_NAME
+Orphan StringName: get_variant_from_type_constructor
+Orphan StringName: MIDI_MESSAGE_CHANNEL_PRESSURE
+Orphan StringName: KEY_FAVORITES
+Orphan StringName: PROPERTY_USAGE_DEFAULT
+Orphan StringName: ERR_PRINTER_ON_FIRE
+Orphan StringName: classdb_register_extension_class_property_subgroup
+Orphan StringName: TYPE_SIGNAL
+Orphan StringName: classdb_register_extension_class_signal
+Orphan StringName: PROPERTY_HINT_MAX
+Orphan StringName: Side
+Orphan StringName: KEY_NONE
+Orphan StringName: MOUSE_BUTTON_XBUTTON1
+Orphan StringName: MOUSE_BUTTON_XBUTTON2
+Orphan StringName: Vector2i
+Orphan StringName: Callable
+Orphan StringName: Vector3i
+Orphan StringName: Vector4i
+Orphan StringName: TYPE_NODE_PATH
+Orphan StringName: TYPE_STRING
+Orphan StringName: KEY_MASK_KPAD
+Orphan StringName: Godot
+Orphan StringName: variant_has_method
+Orphan StringName: KEY_MASK_ALT
+Orphan StringName: ERR_FILE_CANT_READ
+Orphan StringName: variant_get
+Orphan StringName: get_library_path
+Orphan StringName: PROPERTY_USAGE_RESTART_IF_CHANGED
+Orphan StringName: string_operator_plus_eq_char
+Orphan StringName: variant_get_ptr_utility_function
+Orphan StringName: ERR_TIMEOUT
+Orphan StringName: PackedStringArray
+Orphan StringName: variant_has_key
+Orphan StringName: SIDE_BOTTOM
+Orphan StringName: KEY_TAB
+Orphan StringName: variant_get_ptr_keyed_getter
+Orphan StringName: VERTICAL
+Orphan StringName: ZoomReset
+Orphan StringName: JOY_BUTTON_RIGHT_STICK
+Orphan StringName: classdb_get_class_tag
+Orphan StringName: TYPE_AABB
+Orphan StringName: EULER_ORDER_XYZ
+Orphan StringName: print_error_with_message
+Orphan StringName: EULER_ORDER_XZY
+Orphan StringName: KEY_MEDIASTOP
+Orphan StringName: get_godot_version
+Orphan StringName: TYPE_VECTOR2
+Orphan StringName: TYPE_VECTOR3
+Orphan StringName: TYPE_VECTOR4
+Orphan StringName: OP_ADD
+Orphan StringName: KEY_PLUS
+Orphan StringName: JOY_BUTTON_MAX
+Orphan StringName: KEY_CTRL
+Orphan StringName: OP_AND
+Orphan StringName: variant_get_type_name
+Orphan StringName: KEY_MEDIANEXT
+Orphan StringName: object_destroy
+Orphan StringName: EULER_ORDER_YXZ
+Orphan StringName: variant_hash
+Orphan StringName: EULER_ORDER_YZX
+Orphan StringName: PROPERTY_USAGE_CHECKED
+Orphan StringName: MIDIMessage
+Orphan StringName: variant_has_member
+Orphan StringName: KEY_PAGEUP
+Orphan StringName: PROPERTY_USAGE_SECRET
+Orphan StringName: packed_byte_array_operator_index_const
+Orphan StringName: EULER_ORDER_ZXY
+Orphan StringName: EULER_ORDER_ZYX
+Orphan StringName: OK
+Orphan StringName: PROPERTY_USAGE_EDITOR
+Orphan StringName: TYPE_TRANSFORM2D
+Orphan StringName: TYPE_TRANSFORM3D
+Orphan StringName: ERR_CANT_CONNECT
+Orphan StringName: array_operator_index
+Orphan StringName: INLINE_ALIGNMENT_TEXT_MASK
+Orphan StringName: KEY_BRACKETRIGHT
+Orphan StringName: OverbrightIndicator
+Orphan StringName: KEY_STANDBY
+Orphan StringName: JOY_BUTTON_LEFT_SHOULDER
+Orphan StringName: ERR_CONNECTION_ERROR
+Orphan StringName: OP_BIT_AND
+Orphan StringName: Basis
+Orphan StringName: variant_get_constant_value
+Orphan StringName: array_operator_index_const
+Orphan StringName: KEY_QUOTEDBL
+Orphan StringName: TYPE_FLOAT
+Orphan StringName: packed_vector2_array_operator_index
+Orphan StringName: GuiCloseCustomizable
+Orphan StringName: ERR_CANT_CREATE
+Orphan StringName: KEY_YEN
+Orphan StringName: MIDI_MESSAGE_PITCH_BEND
+Orphan StringName: ref_set_object
+Orphan StringName: KEY_CLEAR
+Orphan StringName: JoyButton
+Orphan StringName: packed_float64_array_operator_index_const
+Orphan StringName: string_new_with_utf16_chars_and_len
+Orphan StringName: object_set_instance_binding
+Orphan StringName: int
+Orphan StringName: Variant.Type
+Orphan StringName: OP_POWER
+Orphan StringName: CodeFoldDownArrow
+Orphan StringName: CORNER_BOTTOM_RIGHT
+Orphan StringName: OP_SHIFT_RIGHT
+Orphan StringName: InlineAlignment
+Orphan StringName: GuiTab
+Orphan StringName: OP_EQUAL
+Orphan StringName: OP_GREATER
+Orphan StringName: OP_LESS_EQUAL
+Orphan StringName: ERR_METHOD_NOT_FOUND
+Orphan StringName: StatusWarning
+Orphan StringName: global_get_singleton
+Orphan StringName: PROPERTY_USAGE_SCRIPT_DEFAULT_VALUE
+Orphan StringName: KEY_KP_DIVIDE
+Orphan StringName: PROPERTY_HINT_FILE
+Orphan StringName: PackedFloat32Array
+Orphan StringName: OP_NEGATE
+Orphan StringName: PROPERTY_HINT_LOCALE_ID
+Orphan StringName: string_operator_plus_eq_c32str
+Orphan StringName: PROPERTY_HINT_PASSWORD
+Orphan StringName: ERR_CANT_ACQUIRE_RESOURCE
+Orphan StringName: object_method_bind_ptrcall
+Orphan StringName: KEY_0
+Orphan StringName: KEY_1
+Orphan StringName: KEY_2
+Orphan StringName: KEY_3
+Orphan StringName: KEY_4
+Orphan StringName: KEY_5
+Orphan StringName: KEY_6
+Orphan StringName: KEY_7
+Orphan StringName: KEY_8
+Orphan StringName: KEY_9
+Orphan StringName: KEY_A
+Orphan StringName: KEY_B
+Orphan StringName: KEY_C
+Orphan StringName: KEY_D
+Orphan StringName: KEY_E
+Orphan StringName: KEY_F
+Orphan StringName: KEY_G
+Orphan StringName: KEY_H
+Orphan StringName: KEY_I
+Orphan StringName: KEY_J
+Orphan StringName: KEY_K
+Orphan StringName: KEY_L
+Orphan StringName: KEY_M
+Orphan StringName: KEY_N
+Orphan StringName: KEY_O
+Orphan StringName: KEY_P
+Orphan StringName: KEY_Q
+Orphan StringName: KEY_R
+Orphan StringName: KEY_S
+Orphan StringName: KEY_T
+Orphan StringName: KEY_U
+Orphan StringName: KEY_V
+Orphan StringName: KEY_W
+Orphan StringName: KEY_X
+Orphan StringName: KEY_Y
+Orphan StringName: KEY_Z
+Orphan StringName: packed_byte_array_operator_index
+Orphan StringName: variant_iter_init
+Orphan StringName: Plane
+Orphan StringName: KEY_REFRESH
+Orphan StringName: PackedFloat64Array
+Orphan StringName: string_new_with_utf8_chars
+Orphan StringName: PROPERTY_USAGE_STORE_IF_NULL
+Orphan StringName: KEY_BACK
+Orphan StringName: string_new_with_wide_chars_and_len
+Orphan StringName: KEY_OPENURL
+Orphan StringName: SIDE_TOP
+Orphan StringName: PROPERTY_HINT_LAYERS_2D_NAVIGATION
+Orphan StringName: TYPE_OBJECT
+Orphan StringName: xml_parser_open_buffer
+Orphan StringName: ERR_LOCKED
+Orphan StringName: object_get_instance_from_id
+Orphan StringName: KEY_APOSTROPHE
+Orphan StringName: NodePath
+Orphan StringName: MOUSE_BUTTON_NONE
+Orphan StringName: JOY_BUTTON_PADDLE1
+Orphan StringName: JOY_BUTTON_PADDLE2
+Orphan StringName: JOY_BUTTON_PADDLE3
+Orphan StringName: JOY_BUTTON_PADDLE4
+Orphan StringName: EditorHandle
+Orphan StringName: GuiMiniCheckerboard
+Orphan StringName: OP_GREATER_EQUAL
+Orphan StringName: ERR_CYCLIC_LINK
+Orphan StringName: KEY_LAUNCHMEDIA
+Orphan StringName: variant_get_ptr_constructor
+Orphan StringName: KEY_JIS_EISU
+Orphan StringName: COUNTERCLOCKWISE
+Orphan StringName: ERR_CANT_RESOLVE
+Orphan StringName: PROPERTY_USAGE_HIGH_END_GFX
+Orphan StringName: string_operator_plus_eq_cstr
+Orphan StringName: PROPERTY_USAGE_UPDATE_ALL_IF_MODIFIED
+Orphan StringName: variant_set
+Orphan StringName: TYPE_RECT2
+Orphan StringName: ERR_FILE_CANT_WRITE
+Orphan StringName: PROPERTY_HINT_LAYERS_3D_NAVIGATION
+Orphan StringName: Signal
+Orphan StringName: StringName
+Orphan StringName: string_operator_plus_eq_wcstr
+Orphan StringName: string_to_wide_chars
+Orphan StringName: KEY_KP_ENTER
+Orphan StringName: ERR_UNAVAILABLE
+Orphan StringName: LockViewport
+Orphan StringName: String
+Orphan StringName: PROPERTY_HINT_LAYERS_3D_PHYSICS
+Orphan StringName: ClockDirection
+Orphan StringName: GuiGraphNodePort
+Orphan StringName: PROPERTY_USAGE_EDITOR_INSTANTIATE_OBJECT
+Orphan StringName: KEY_VOLUMEDOWN
+Orphan StringName: variant_evaluate
+Orphan StringName: METHOD_FLAG_EDITOR
+Orphan StringName: packed_int32_array_operator_index
+Orphan StringName: OP_MAX
+Orphan StringName: PROPERTY_HINT_FLAGS
+Orphan StringName: ERR_FILE_NO_PERMISSION
+Orphan StringName: Transform2D
+Orphan StringName: KEY_ASCIITILDE
+Orphan StringName: Transform3D
+Orphan StringName: OP_BIT_OR
+Orphan StringName: VERTICAL_ALIGNMENT_CENTER
+Orphan StringName: ERR_FILE_UNRECOGNIZED
+Orphan StringName: script_instance_create
+Orphan StringName: KEY_MEDIAPLAY
+Orphan StringName: editor_remove_plugin
+Orphan StringName: VERTICAL_ALIGNMENT_FILL
+Orphan StringName: OP_NOT
+Orphan StringName: packed_float32_array_operator_index
+Orphan StringName: print_warning
+Orphan StringName: KEY_VOLUMEMUTE
+Orphan StringName: ZoomMore
+Orphan StringName: CORNER_TOP_RIGHT
+Orphan StringName: PROPERTY_USAGE_GROUP
+Orphan StringName: METHOD_FLAG_VARARG
+Orphan StringName: KEY_MASK_GROUP_SWITCH
+Orphan StringName: PROPERTY_HINT_ARRAY_TYPE
+Orphan StringName: PROPERTY_HINT_LAYERS_2D_RENDER
+Orphan StringName: PROPERTY_USAGE_CHECKABLE
+Orphan StringName: KEY_MENU
+Orphan StringName: EditorControlAnchor
+Orphan StringName: KEY_SECTION
+Orphan StringName: KEY_META
+Orphan StringName: PROPERTY_USAGE_SCRIPT_VARIABLE
+Orphan StringName: KEY_DELETE
+Orphan StringName: PROPERTY_USAGE_RESOURCE_NOT_PERSISTENT
+Orphan StringName: Corner
+Orphan StringName: PROPERTY_USAGE_SUBGROUP
+Orphan StringName: OP_DIVIDE
+Orphan StringName: variant_recursive_hash
+Orphan StringName: StatusError
+Orphan StringName: variant_new_copy
+Orphan StringName: variant_set_indexed
+Orphan StringName: KEY_NUMLOCK
+Orphan StringName: FAILED
+Orphan StringName: Array
+Orphan StringName: JOY_AXIS_RIGHT_X
+Orphan StringName: JOY_AXIS_RIGHT_Y
+Orphan StringName: OP_NOT_EQUAL
+Orphan StringName: PROPERTY_HINT_NODE_PATH_VALID_TYPES
+Orphan StringName: variant_get_ptr_operator_evaluator
+Orphan StringName: variant_call
+Orphan StringName: ref_get_object
+Orphan StringName: Quaternion
+Orphan StringName: KEY_EQUAL
+Orphan StringName: KEY_LAUNCH0
+Orphan StringName: KEY_LAUNCH1
+Orphan StringName: KEY_LAUNCH2
+Orphan StringName: KEY_LAUNCH3
+Orphan StringName: KEY_LAUNCH4
+Orphan StringName: KEY_LAUNCH5
+Orphan StringName: KEY_LAUNCH6
+Orphan StringName: KEY_LAUNCH7
+Orphan StringName: KEY_LAUNCH8
+Orphan StringName: KEY_LAUNCH9
+Orphan StringName: KEY_LAUNCHA
+Orphan StringName: KEY_LAUNCHB
+Orphan StringName: KEY_LAUNCHC
+Orphan StringName: KEY_LAUNCHD
+Orphan StringName: KEY_LAUNCHE
+Orphan StringName: KEY_LAUNCHF
+Orphan StringName: PROPERTY_HINT_OBJECT_ID
+Orphan StringName: MIDI_MESSAGE_SYSTEM_RESET
+Orphan StringName: bool
+Orphan StringName: PropertyUsageFlags
+Orphan StringName: OP_MULTIPLY
+Orphan StringName: variant_iter_get
+Orphan StringName: MIDI_MESSAGE_PROGRAM_CHANGE
+Orphan StringName: classdb_register_extension_class_integer_constant
+Orphan StringName: VERTICAL_ALIGNMENT_BOTTOM
+Orphan StringName: PROPERTY_USAGE_NODE_PATH_FROM_SCENE_ROOT
+Orphan StringName: CORNER_TOP_LEFT
+Orphan StringName: PackedColorArray
+Orphan StringName: variant_destroy
+Orphan StringName: object_get_class_name
+Orphan StringName: TYPE_RECT2I
+Orphan StringName: KEY_DOLLAR
+Orphan StringName: MouseButton
+Orphan StringName: JOY_BUTTON_RIGHT_SHOULDER
+Orphan StringName: KEY_UNDERSCORE
+Orphan StringName: packed_float32_array_operator_index_const
+Orphan StringName: KEY_JIS_KANA
+Orphan StringName: MOUSE_BUTTON_MASK_RIGHT
+Orphan StringName: KEY_KP_0
+Orphan StringName: KEY_KP_1
+Orphan StringName: KEY_KP_2
+Orphan StringName: KEY_KP_3
+Orphan StringName: KEY_KP_4
+Orphan StringName: KEY_KP_5
+Orphan StringName: KEY_KP_6
+Orphan StringName: KEY_KP_7
+Orphan StringName: KEY_KP_8
+Orphan StringName: KEY_KP_9
+Orphan StringName: OP_POSITIVE
+Orphan StringName: PROPERTY_USAGE_EDITOR_BASIC_SETTING
+Orphan StringName: KEY_BRACERIGHT
+Orphan StringName: MIDI_MESSAGE_NOTE_OFF
+Orphan StringName: variant_get_named
+Orphan StringName: JOY_BUTTON_GUIDE
+Orphan StringName: mem_realloc
+Orphan StringName: packed_vector3_array_operator_index
+Orphan StringName: PackedVector2Array
+Orphan StringName: GuiSpace
+Orphan StringName: OP_BIT_NEGATE
+Orphan StringName: PROPERTY_USAGE_READ_ONLY
+Orphan StringName: OP_SUBTRACT
+Orphan StringName: get_variant_to_type_constructor
+Orphan StringName: JOY_AXIS_INVALID
+Orphan StringName: Object
+Orphan StringName: TYPE_COLOR
+Orphan StringName: MIDI_MESSAGE_STOP
+Orphan StringName: packed_int64_array_operator_index_const
+Orphan StringName: ERR_UNCONFIGURED
+Orphan StringName: ERR_DATABASE_CANT_READ
+Orphan StringName: KEY_HOMEPAGE
+Orphan StringName: INLINE_ALIGNMENT_TOP
+Orphan StringName: JOY_BUTTON_DPAD_DOWN
+Orphan StringName: PROPERTY_HINT_GLOBAL_FILE
+Orphan StringName: PROPERTY_HINT_EXPRESSION
+Orphan StringName: PROPERTY_HINT_INT_IS_POINTER
+Orphan StringName: OP_XOR
+Orphan StringName: PROPERTY_HINT_LINK
+Orphan StringName: TYPE_PACKED_VECTOR2_ARRAY
+Orphan StringName: KEY_EXCLAM
+Orphan StringName: ERR_FILE_BAD_DRIVE
+Orphan StringName: AABB
+Orphan StringName: EditorPivot
+Orphan StringName: KEY_GREATER
+Orphan StringName: DefaultProjectIcon
+Orphan StringName: PROPERTY_USAGE_NIL_IS_VARIANT
+Orphan StringName: classdb_register_extension_class_property
+Orphan StringName: ERR_DUPLICATE_SYMBOL
+Orphan StringName: string_new_with_latin1_chars
+Orphan StringName: KEY_PAGEDOWN
+Orphan StringName: CLOCKWISE
+Orphan StringName: variant_get_ptr_setter
+Orphan StringName: PROPERTY_USAGE_NO_EDITOR
+Orphan StringName: classdb_unregister_extension_class
+Orphan StringName: string_new_with_wide_chars
+Orphan StringName: INLINE_ALIGNMENT_BOTTOM_TO
+Orphan StringName: KEY_KP_PERIOD
+Orphan StringName: packed_vector3_array_operator_index_const
+Orphan StringName: MIDI_MESSAGE_ACTIVE_SENSING
+Orphan StringName: packed_vector2_array_operator_index_const
+Orphan StringName: OP_BIT_XOR
+Orphan StringName: JOY_AXIS_LEFT_X
+Orphan StringName: JOY_AXIS_LEFT_Y
+Orphan StringName: get_native_struct_size
+Orphan StringName: MIDI_MESSAGE_CONTROL_CHANGE
+Orphan StringName: TYPE_CALLABLE
+Orphan StringName: string_to_utf32_chars
+Orphan StringName: variant_get_type
+Orphan StringName: object_set_instance
+Orphan StringName: KeyModifierMask
+Orphan StringName: variant_get_keyed
+Orphan StringName: variant_stringify
+Orphan StringName: MIDI_MESSAGE_TIMING_CLOCK
+Orphan StringName: MOUSE_BUTTON_WHEEL_UP
+Orphan StringName: KEY_MASK_CMD_OR_CTRL
+Orphan StringName: TYPE_VECTOR2I
+Orphan StringName: TextEditorPlay
+Orphan StringName: TYPE_VECTOR3I
+Orphan StringName: ERR_BUSY
+Orphan StringName: TYPE_VECTOR4I
+Orphan StringName: float
+Orphan StringName: PROPERTY_HINT_LOCALIZABLE_STRING
+Orphan StringName: variant_get_ptr_destructor
+Orphan StringName: PROPERTY_HINT_COLOR_NO_ALPHA
+Orphan StringName: packed_string_array_operator_index
+Orphan StringName: ERR_FILE_ALREADY_IN_USE
+Orphan StringName: KEY_BACKSLASH
+Orphan StringName: string_new_with_utf32_chars
+Orphan StringName: Orientation
+Orphan StringName: MOUSE_BUTTON_RIGHT
+Orphan StringName: TYPE_PACKED_FLOAT64_ARRAY
+Orphan StringName: PROPERTY_USAGE_CLASS_IS_ENUM
+Orphan StringName: KEY_DOWN
+Orphan StringName: packed_color_array_operator_index
+Orphan StringName: ERR_FILE_EOF
+Orphan StringName: variant_new_nil
+Orphan StringName: TYPE_QUATERNION
+Orphan StringName: variant_can_convert_strict
+Orphan StringName: KEY_SHIFT
+Orphan StringName: ERR_HELP
+Orphan StringName: Dictionary
+Orphan StringName: MOUSE_BUTTON_MASK_MB_XBUTTON1
+Orphan StringName: MOUSE_BUTTON_MASK_MB_XBUTTON2
+Orphan StringName: MIDI_MESSAGE_TUNE_REQUEST
+Orphan StringName: TYPE_INT
+Orphan StringName: ERR_PARAMETER_RANGE_ERROR
+Orphan StringName: METHOD_FLAG_NORMAL
+Orphan StringName: KEY_HELP
+Orphan StringName: KEY_PERIOD
+Orphan StringName: Projection
+Orphan StringName: SIDE_LEFT
+Orphan StringName: TYPE_PACKED_FLOAT32_ARRAY
+Orphan StringName: JOY_BUTTON_MISC1
+Orphan StringName: ERR_FILE_CANT_OPEN
+Orphan StringName: KEY_KP_MULTIPLY
+Orphan StringName: MOUSE_BUTTON_MIDDLE
+Orphan StringName: variant_get_ptr_getter
+Orphan StringName: ZoomLess
+Orphan StringName: Rect2
+Orphan StringName: print_warning_with_message
+Orphan StringName: PackedVector3Array
+Orphan StringName: PackedInt32Array
+Orphan StringName: Rect2i
+Orphan StringName: KEY_AT
+Orphan StringName: VerticalAlignment
+Orphan StringName: KEY_F1
+Orphan StringName: KEY_F2
+Orphan StringName: KEY_F3
+Orphan StringName: KEY_F4
+Orphan StringName: KEY_F5
+Orphan StringName: KEY_F6
+Orphan StringName: KEY_F7
+Orphan StringName: KEY_F8
+Orphan StringName: KEY_F9
+Orphan StringName: INLINE_ALIGNMENT_BASELINE_TO
+Orphan StringName: MIDI_MESSAGE_START
+Orphan StringName: classdb_register_extension_class_property_group
+Orphan StringName: mem_alloc
+Orphan StringName: KEY_UP
+Orphan StringName: KEY_CODE_MASK
+Orphan StringName: PROPERTY_HINT_RANGE
+Orphan StringName: TYPE_PACKED_COLOR_ARRAY
+Orphan StringName: JOY_AXIS_MAX
+Orphan StringName: PROPERTY_HINT_LAYERS_AVOIDANCE
+Orphan StringName: classdb_register_extension_class
+Orphan StringName: KEY_MINUS
+Orphan StringName: ERR_CANT_OPEN
+Orphan StringName: KEY_SLASH
+Orphan StringName: ERR_INVALID_DATA
+Orphan StringName: MOUSE_BUTTON_WHEEL_RIGHT
+Orphan StringName: MIDI_MESSAGE_NONE
+Orphan StringName: HORIZONTAL_ALIGNMENT_FILL
+Orphan StringName: TYPE_MAX
+Orphan StringName: PackedInt64Array
+Orphan StringName: PROPERTY_HINT_MULTILINE_TEXT
+Orphan StringName: MIDI_MESSAGE_SONG_SELECT
+Orphan StringName: KEY_MODIFIER_MASK
+Orphan StringName: PROPERTY_USAGE_KEYING_INCREMENTS
+Orphan StringName: KEY_PAUSE
+Orphan StringName: worker_thread_pool_add_native_group_task
+Orphan StringName: METHOD_FLAG_STATIC
+Orphan StringName: KEY_LAUNCHMAIL
+Orphan StringName: PROPERTY_HINT_INT_IS_OBJECTID
+Orphan StringName: Breakpoint
+Orphan StringName: variant_hash_compare
+Orphan StringName: TYPE_NIL
+Orphan StringName: HorizontalAlignment
+Orphan StringName: KEY_KEYBOARD
+Orphan StringName: GuiRadioChecked
+Orphan StringName: string_to_latin1_chars
+Orphan StringName: KEY_PERCENT
+Orphan StringName: Key
+Orphan StringName: KEY_BRACELEFT
+Orphan StringName: PROPERTY_HINT_PLACEHOLDER_TEXT
+StringName: 725 unclaimed string names at exit.
+[Inferior 1 (process 466146) exited normally]
+(gdb) 

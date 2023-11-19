@@ -1,0 +1,240 @@
+
+[~] gdb -ex run --args ./code/godot/bin/godot.linuxbsd.editor.x86_64 ./code/plugin-print-crash/project.godot --verbose
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./code/godot/bin/godot.linuxbsd.editor.x86_64...
+Starting program: /home/adam/code/godot/bin/godot.linuxbsd.editor.x86_64 ./code/plugin-print-crash/project.godot --verbose
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after vfork from child process 465849]
+[New Thread 0x7ffff69ff640 (LWP 465851)]
+[New Thread 0x7ffff61fe640 (LWP 465852)]
+[New Thread 0x7ffff59fd640 (LWP 465853)]
+[New Thread 0x7ffff51fc640 (LWP 465854)]
+[New Thread 0x7ffff49fb640 (LWP 465855)]
+[New Thread 0x7ffff41fa640 (LWP 465856)]
+[New Thread 0x7ffff39f9640 (LWP 465857)]
+[New Thread 0x7ffff31f8640 (LWP 465858)]
+[New Thread 0x7ffff29f7640 (LWP 465859)]
+[New Thread 0x7ffff21f6640 (LWP 465860)]
+[New Thread 0x7ffff19f5640 (LWP 465861)]
+[New Thread 0x7ffff11f4640 (LWP 465862)]
+[New Thread 0x7ffff09f3640 (LWP 465863)]
+Godot Engine v4.1.3.stable.custom_build.fc7920185 - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Xshape 1.1 detected.
+Xinerama 1.1 detected.
+Xrandr 1.6 detected.
+Xrender 0.11 detected.
+Xinput 2.2 detected.
+XInput: Refreshing devices.
+XInput: No touch devices found.
+[New Thread 0x7fffe39ff640 (LWP 465864)]
+Vulkan devices:
+  #0: Intel Intel(R) Graphics (ADL GT2) - Supported, Integrated
+  #1: Unknown llvmpipe (LLVM 15.0.7, 256 bits) - Supported, CPU
+Vulkan API 1.3.246 - Forward+ - Using Vulkan Device #0: Intel - Intel(R) Graphics (ADL GT2)
+Optional extension VK_GOOGLE_display_timing not found
+- Vulkan Variable Rate Shading supported:
+  Pipeline fragment shading rate
+- Vulkan multiview supported:
+  max view count: 16
+  max instances: 268435455
+- Vulkan subgroup:
+  size: 32
+  stages: STAGE_VERTEX, STAGE_TESSELLATION_CONTROL, STAGE_TESSELLATION_EVALUATION, STAGE_GEOMETRY, STAGE_FRAGMENT, STAGE_COMPUTE
+  supported ops: FEATURE_BASIC, FEATURE_VOTE, FEATURE_ARITHMETIC, FEATURE_BALLOT, FEATURE_SHUFFLE, FEATURE_SHUFFLE_RELATIVE, FEATURE_CLUSTERED, FEATURE_QUAD
+  quad operations in all stages
+[New Thread 0x7fffe2f3e640 (LWP 465865)]
+[New Thread 0x7fffe273d640 (LWP 465866)]
+Startup PSO cache (1.4 MiB)
+[New Thread 0x7fffe1b3a640 (LWP 465867)]
+[New Thread 0x7fffe1339640 (LWP 465868)]
+[New Thread 0x7fffe0b38640 (LWP 465869)]
+[Thread 0x7fffe273d640 (LWP 465866) exited]
+[New Thread 0x7fffe273d640 (LWP 465870)]
+[New Thread 0x7fffcbfff640 (LWP 465871)]
+ScreenSaver: DBus 1.12.20 detected.
+PortalDesktop: DBus 1.12.20 detected.
+Using "default" pen tablet driver...
+Creating VMA small objects pool for memory type index 0
+Shader 'CanvasSdfShaderRD' SHA256: d4b7dab09e8acc0009f4b62e1e6d7d25b37c59d116f39a4c5de8d8cf38286ebf
+Shader 'SkeletonShaderRD' SHA256: 3fac299dff340ce8fe0f5b4eaee57f528e99986720441d3ea2b6199afd106299
+Shader 'SortShaderRD' SHA256: 1df57c0b2f1a725d34fe319c6df66f54ad90cbfa2a8c33b448013d538729cc38
+Shader 'ParticlesShaderRD' SHA256: 26e3f31657a368f16968083c2af2a15c816ccf1b56d0363d53b43d92e62e6f8b
+Shader 'ParticlesCopyShaderRD' SHA256: f34965002c1b5984d45def110c1104a7e424c449b4a5e63eaff72d82b8b89e16
+Shader 'CanvasShaderRD' SHA256: 247269c611c0e7b77fe06eebf18e3a19275fdc29dc5ff9edeee494a211833e2b
+Shader 'CanvasOcclusionShaderRD' SHA256: 644cce8555d8ba76211b286cbd14b438cd079b941fa73dee2bd29c74e3f38e4a
+Shader 'ClusterRenderShaderRD' SHA256: 13d4926ef77b6d9c8914482c754666e799d11af1939a8a19e4288a3d178e0b17
+Shader 'ClusterStoreShaderRD' SHA256: c61de32afbd79d62ce87d843265fcab47401dde70d382f06d9e3fad2024b1822
+Shader 'ClusterDebugShaderRD' SHA256: 993fa2364b7acae71a5210c10a3a26fbac2374527aaf7ddc3a82328d6786941d
+Shader 'SceneForwardClusteredShaderRD' SHA256: 7960b82d30f802faa83ad42aca1349b8a1b0bf17e74dc3587c145eaa8e0522e6
+Shader 'ResolveShaderRD' SHA256: 916994bc742a7e1e7f2a402016e94c7ba112d8f74372d64eac4c5509410fe34d
+Shader 'TaaResolveShaderRD' SHA256: 750c6cd968046c25a6f12d6e12c4e877cdb08648e83e11a3ea700370278c7093
+Shader 'SsEffectsDownsampleShaderRD' SHA256: 633aea82d20e6e7a88353fd5923a1cf49f3c9f2dd9169cc281b371e25f57b689
+Shader 'SsilShaderRD' SHA256: e58231ee530ae7373450a981480435b901c557287c3bf2a8aa7550a00dae61dd
+Shader 'SsilImportanceMapShaderRD' SHA256: ca411aaede5bfd83f808f811eed6b588f3266502c93a6c935b10f9134ff7e7df
+Shader 'SsilBlurShaderRD' SHA256: 4a358b5e5cc548ef4e11c264ff710d892f05e9e2f972d3f79cd1aff7a88b59de
+Shader 'SsilInterleaveShaderRD' SHA256: b26eeac08699d927ee0cb669b04e91c41e5109b6e341b552bfe0c2eeb2720d49
+Shader 'SsaoShaderRD' SHA256: 0202d4fbae7e11f5a83f77fc240a38aef843788d6cd0b6801d659cf94cfaaec4
+Shader 'SsaoImportanceMapShaderRD' SHA256: 445907b93e9ee92c3fa3ded6653427d76af7469987275e787761bb45f1105723
+Shader 'SsaoBlurShaderRD' SHA256: 8666dafa101243f5937c9c03a99ce7ee0ab53a8e268cb0417f6b3141b5b8d526
+Shader 'SsaoInterleaveShaderRD' SHA256: 1d04a4491c64099a4cacc0220ab78ac6b7ca4dbe7034b6d4dc61acffcff29a41
+Shader 'ScreenSpaceReflectionScaleShaderRD' SHA256: 445e9920745534c94dd36f6720110b9585aeafc94972a2598b47cfe48fece78d
+Shader 'ScreenSpaceReflectionShaderRD' SHA256: 2f4c15a9b97beea62a7c784a9918c9d07a5871bf014188273d5b9180bb74329f
+Shader 'ScreenSpaceReflectionFilterShaderRD' SHA256: f2cc6bdc1582d327810c4e0f9ac2f39ddffa36b071097de2e0d33ae82d5a38ae
+Shader 'SubsurfaceScatteringShaderRD' SHA256: ed5e336dc17e84729bfd3801e18395314d0cbcf06955d3fdc4df4ce355b43ea4
+Shader 'SkyShaderRD' SHA256: 441e3396564d50c158a288d50318e949750a90ae4fed77798c9df4b90d67a08c
+Shader 'VoxelGiShaderRD' SHA256: 83dc52217e896e4c7ad2b45f79d1549cb1c051ce716e70337fdd3e0d795819b0
+Shader 'VoxelGiDebugShaderRD' SHA256: 7a9cf03485f5c39b71680f0a868597cba3762b2e73ecef2f160f7e6ac6367645
+Shader 'SdfgiPreprocessShaderRD' SHA256: c93640cd216101561a3d46d5434b303c52daaaf8aef006a5c2f78786b6c847a9
+Shader 'SdfgiDirectLightShaderRD' SHA256: 4eb7e1cc9a3b97da31883ac1f35c47a7b44bcb6f0a4f94e4ac3abb146d9ba448
+Shader 'SdfgiIntegrateShaderRD' SHA256: 3bd094b60e6f860cfd864e27330e6d8df5bf0d902151dcbcdf2a5c7a675b1caf
+Shader 'GiShaderRD' SHA256: 364faf5adecc7cec94e0b6d8423347e0bb897859660167a58c859a50b8d8bb37
+Shader 'SdfgiDebugShaderRD' SHA256: 64b0e7d19bdf335562a8b02d07d4abd8b27e34bc9e48ca84031f4795b3ec38c6
+Shader 'SdfgiDebugProbesShaderRD' SHA256: 48d67b19985d10222164847031cc3730d9859229e0820a64cc49d66e9d82cc75
+Shader 'VolumetricFogShaderRD' SHA256: 965dbac2080f7915e51479584891ebdb0f3a072d1d80542e9b20e7e35180bf97
+Shader 'VolumetricFogProcessShaderRD' SHA256: 03cd8586d8b791c23635e4fda445566267818a5ff4cd2cf589a7c5a896221301
+Shader 'BokehDofShaderRD' SHA256: e190402da50230eb0bd9e08a3fd0f6ebc7edb39e562ce1db05005c49158a6432
+Shader 'CopyShaderRD' SHA256: c6e214849467a83f1fa6014a1a4f93663551dca599114cbcdcac6fb1db802920
+Shader 'CopyToFbShaderRD' SHA256: 88d65a064a23090cc51d7cd6b1f42a9f67d4555ee85fbb7bffe9e89fd55e1f01
+Shader 'CubeToDpShaderRD' SHA256: fda76f02243de8baca83234e04733f2eb0366a401b11a6a3998868e5d93a3004
+Shader 'CubemapDownsamplerShaderRD' SHA256: 46d846dc23d4dc9e3baf2d118988b308b7a5a50b17a00bf5a613d366f02fa019
+Shader 'CubemapFilterShaderRD' SHA256: 41f561d0d3d77ac1fcf348bcf27cb960c3d999dc3ab7194939b083cf4344e8bd
+Shader 'CubemapRoughnessShaderRD' SHA256: e9f4ee4c3956eeda300414d6f4f77b42011c2ca9d435658a973b655205f12416
+Shader 'SpecularMergeShaderRD' SHA256: aba9d638bce3bd86ec4adadcd0e24226281791aebc5c959b985a40aafbac9440
+Shader 'LuminanceReduceShaderRD' SHA256: 3e0a6b285bfab18815628726c822be20e9df6c0e2ff989db29b26673126dd8a1
+Shader 'TonemapShaderRD' SHA256: ce7ee599fcc63a30cbc71b064bcd56eb70ea956cda37109703c8c2d6a6560e4f
+Shader 'FsrUpscaleShaderRD' SHA256: 9fbb6a80e317d71cca9f1125b346af0fe45a18f1d4694050f0ca8aeee3b9704c
+Shader 'BlitShaderRD' SHA256: fa805e6db095699a17fdea7f9c162bfcc71878686c66f832357701b04dbb7a93
+JoypadLinux: udev enabled and loaded successfully.
+[New Thread 0x7fffc95fc640 (LWP 465873)]
+[New Thread 0x7fffc8dfb640 (LWP 465874)]
+PulseAudio 15.99.0 detected.
+PulseAudio: context other
+PulseAudio: context other
+PulseAudio: context other
+PulseAudio: context ready
+PulseAudio: Detecting channels for device: alsa_output.pci-0000_00_1f.3.analog-stereo
+PulseAudio: detected 2 output channels
+PulseAudio: audio buffer frames: 512 calculated output latency: 11ms
+[New Thread 0x7fffbbfff640 (LWP 465875)]
+ 
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+[New Thread 0x7fffbb7fe640 (LWP 465876)]
+CORE API HASH: 1133376617
+EDITOR API HASH: 884771216
+Regenerating editor help cache
+Class 'EditorPropertyNameProcessor' is not exposed, skipping.
+Class 'FramebufferCacheRD' is not exposed, skipping.
+Class 'GDScriptEditorTranslationParserPlugin' is not exposed, skipping.
+Class 'GDScriptNativeClass' is not exposed, skipping.
+Class 'GLTFDocumentExtensionPhysics' is not exposed, skipping.
+Class 'GLTFDocumentExtensionTextureWebP' is not exposed, skipping.
+Class 'GodotPhysicsServer2D' is not exposed, skipping.
+Class 'GodotPhysicsServer3D' is not exposed, skipping.
+Class 'IPUnix' is not exposed, skipping.
+Class 'MovieWriterMJPEG' is not exposed, skipping.
+Class 'MovieWriterPNGWAV' is not exposed, skipping.
+Class 'ResourceFormatImporterSaver' is not exposed, skipping.
+Class 'ResourceImporterMP3' is not exposed, skipping.
+Class 'ResourceImporterOggVorbis' is not exposed, skipping.
+Class 'SceneCacheInterface' is not exposed, skipping.
+Class 'SceneRPCInterface' is not exposed, skipping.
+Class 'SceneReplicationInterface' is not exposed, skipping.
+Class 'UniformSetCacheRD' is not exposed, skipping.
+[New Thread 0x7fffbaffd640 (LWP 465877)]
+EditorSettings: Load OK!
+[New Thread 0x7fffba7fc640 (LWP 465878)]
+[New Thread 0x7fffb89a3640 (LWP 465879)]
+[New Thread 0x7fffa3fff640 (LWP 465880)]
+[Thread 0x7fffbaffd640 (LWP 465877) exited]
+[New Thread 0x7fffbaffd640 (LWP 465881)]
+Loaded system CA certificates
+Creating VMA small objects pool for memory type index 2
+EditorSettings: Save OK!
+[Thread 0x7fffe273d640 (LWP 465870) exited]
+[New Thread 0x7fffe273d640 (LWP 465886)]
+[New Thread 0x7fffa37fe640 (LWP 465887)]
+[Thread 0x7fffa37fe640 (LWP 465887) exited]
+[New Thread 0x7fffa37fe640 (LWP 465888)]
+[Thread 0x7fffa37fe640 (LWP 465888) exited]
+freeing plugin control
+[Thread 0x7fffbaffd640 (LWP 465881) exited]
+[Thread 0x7fffba7fc640 (LWP 465878) exited]
+[Thread 0x7fffb89a3640 (LWP 465879) exited]
+[Thread 0x7fffa3fff640 (LWP 465880) exited]
+EditorSettings: Save OK!
+corrupted size vs. prev_size while consolidating
+
+Thread 1 "godot.linuxbsd." received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352808448) at ./nptl/pthread_kill.c:44
+44	./nptl/pthread_kill.c: No such file or directory.
+(gdb) bt
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352808448)
+    at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352808448) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352808448, signo=signo@entry=6)
+    at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7c42476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff7c287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff7c89676 in __libc_message (action=action@entry=do_abort, 
+    fmt=fmt@entry=0x7ffff7ddbb8c "%s\n") at ../sysdeps/posix/libc_fatal.c:155
+#6  0x00007ffff7ca0cfc in malloc_printerr (
+    str=str@entry=0x7ffff7dde820 "corrupted size vs. prev_size while consolidating")
+    at ./malloc/malloc.c:5664
+#7  0x00007ffff7ca2f22 in _int_free (av=0x7ffff7e19c80 <main_arena>, p=0x55556fde9a70, 
+    have_lock=<optimized out>) at ./malloc/malloc.c:4606
+#8  0x00007ffff7ca4bdb in _int_realloc (av=av@entry=0x7ffff7e19c80 <main_arena>, 
+    oldp=oldp@entry=0x55556fde9ae0, oldsize=oldsize@entry=160, nb=nb@entry=288)
+    at ./malloc/malloc.c:4900
+#9  0x00007ffff7ca5862 in __GI___libc_realloc (oldmem=0x55556fde9af0, bytes=272)
+    at ./malloc/malloc.c:3494
+#10 0x000055555a34ed1e in Memory::realloc_static (p_memory=<optimized out>, 
+    p_bytes=p_bytes@entry=256, p_pad_align=p_pad_align@entry=true) at core/os/memory.cpp:129
+#11 0x00005555574c5bf1 in CowData<EditorLog::LogMessage>::resize<false> (
+    this=0x5555683a1710, p_size=9) at ./core/templates/cowdata.h:296
+#12 0x00005555574bfc2c in Vector<EditorLog::LogMessage>::resize (p_size=<optimized out>, 
+    this=0x5555683a1708) at ./core/templates/vector.h:94
+#13 Vector<EditorLog::LogMessage>::push_back (p_elem=..., this=0x5555683a1708)
+    at ./core/templates/vector.h:316
+#14 EditorLog::_process_message (this=0x5555683a0d30, p_msg=..., p_type=<optimized out>)
+    at editor/editor_log.cpp:227
+#15 0x00005555574bffcc in EditorLog::add_message (this=0x5555683a0d30, p_msg=..., 
+    p_type=EditorLog::MSG_TYPE_STD) at editor/editor_log.cpp:242
+#16 0x0000555557535f33 in call_with_variant_args_static<String const&, bool, bool, 0ul, 1ul, 2ul> (r_error=..., p_args=0x7fffffffd590, 
+    p_method=0x5555574c6250 <EditorNode::_print_handler_impl(String const&, bool, bool)>)
+    at ./core/variant/binder_common.h:777
+#17 call_with_variant_args_static_ret<String const&, bool, bool> (r_error=..., r_ret=..., 
+    p_argcount=<optimized out>, p_args=0x7fffffffd590, 
+    p_method=0x5555574c6250 <EditorNode::_print_handler_impl(String const&, bool, bool)>)
+    at ./core/variant/binder_common.h:846
+#18 CallableCustomStaticMethodPointerRet<void, String const&, bool, bool>::call (
+    this=<optimized out>, p_arguments=0x7fffffffd590, p_argcount=<optimized out>, 
+    r_return_value=..., r_call_error=...) at ./core/object/callable_method_pointer.h:308
+#19 0x000055555a5e9f02 in CallableCustomBind::call (this=0x555572b232d0, 
+    p_arguments=<optimized out>, p_argcount=0, r_return_value=..., r_call_error=...)
+    at core/variant/callable_bind.cpp:144
+#20 0x000055555a8b6ddb in CallQueue::_call_function (this=<optimized out>, p_callable=..., 
+    p_args=<optimized out>, p_argcount=0, p_show_error=<optimized out>)
+    at core/object/message_queue.cpp:219
+--Type <RET> for more, q to quit, c to continue without paging--
+#21 0x000055555a8ba555 in CallQueue::flush (this=0x55555da3f3c0)
+    at core/object/message_queue.cpp:320
+#22 0x00005555561a0a5a in Main::cleanup (p_force=p_force@entry=false) at main/main.cpp:3563
+#23 0x0000555556128ff5 in main (argc=<optimized out>, argv=0x7fffffffdd78)
+    at platform/linuxbsd/godot_linuxbsd.cpp:76
